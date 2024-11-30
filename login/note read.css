@@ -1,0 +1,197 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.ship_1,
+.ship_2 {
+    position: absolute;
+    width: 800px;
+    z-index: -1;
+}
+
+.ship_1 {
+    bottom: -20%;
+    right: 0px;
+    transform: translateX(35%);
+}
+
+.ship_2 {
+    top: -50%;
+    left: 0px;
+    transform: translateX(-57%);
+}
+
+/* تصميم الخلفية */
+.background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+/* تصميم الدائرة مع الأيقونة */
+.avatar {
+    background-color: #f0f0f0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #666;
+    border: 3px solid #000;
+}
+
+/* تنسيق حقول الإدخال */
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    border-color: #ff0099;
+    outline: none;
+}
+
+/* تصميم زر التسجيل */
+.signup-btn {
+    background-color: #ff0099;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #e60087;
+}
+
+/* رابط تسجيل الدخول */
+.login-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+
+.login-link:hover {
+    color: #333;
+}
+
+/* وسائل الإعلام (Media Queries) */
+@media (max-width: 768px) {
+    .signup-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    .input-field, .signup-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .ship_1,
+    .ship_2 {
+        width: 600px;
+    }
+
+    .ship_1 {
+        bottom: -25%;
+        right: 0;
+        transform: translateX(40%);
+    }
+
+    .ship_2 {
+        top: -40%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        border: none;
+        box-shadow: none;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .input-field, .signup-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .ship_1,
+    .ship_2 {
+        width: 400px;
+    }
+
+    .ship_1 {
+        bottom: -30%;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .ship_2 {
+        top: -30%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+}
